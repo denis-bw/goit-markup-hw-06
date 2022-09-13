@@ -810,6 +810,10 @@ body{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-form-input:focus {
@@ -829,6 +833,12 @@ body{
 
 .link-modal-form {
     color: var(--barand-color);
+}
+
+.text-modal-terms {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
 }
 
 .btn-modal-form {
@@ -852,12 +862,15 @@ body{
     margin-bottom: 10px;
 }
 
+.checbox-modal {
+    display: block;
+    margin-bottom: 20px;
+}
 
 .modal-massage {
     width: 100%;
     height: 120px;
-    padding: 12px 16px;
-    margin-bottom: 20px;
+    padding: 12px 16px;    
     resize: none;
     font-weight: 400;
     font-size: 12px;
@@ -880,6 +893,7 @@ body{
 .text-terms {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -937,8 +951,7 @@ body{
     margin-left: auto;
 }
 
-.text-footer-form {
-    margin-bottom: 20px;
+.text-footer-form {    
     font-weight: 700;
     font-size: 14px;
     display: block;
@@ -946,6 +959,11 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase; 
     color: #FFFFFF;
+}
+
+.box-footer-label {
+    display: block;
+    margin-bottom: 20px;
 }
 
 .input-footer-form {
